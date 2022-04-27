@@ -1,0 +1,255 @@
+[
+  {
+    "id": 1,
+    "title": "Мяч баскетбольный",
+    "imgUrl": "assets/imgs/basket-ball.jpg",
+    "type": "мячи",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 100,
+    "availability": true,
+    "booking": [
+      "2021-11-25"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Мяч волейбольный",
+    "imgUrl": "assets/imgs/volley-ball.jpg",
+    "type": "мячи",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 80,
+    "availability": true
+  },
+  {
+    "id": 3,
+    "title": "Беговел",
+    "imgUrl": "assets/imgs/begovel.jpg",
+    "type": "транспорт",
+    "season": [
+      "весна",
+      "лето"
+    ],
+    "price": 180,
+    "availability": false
+  },
+  {
+    "id": 4,
+    "title": "Велосипед",
+    "imgUrl": "assets/imgs/bicycle.jpg",
+    "type": "транспорт",
+    "season": [
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 250,
+    "availability": true
+  },
+  {
+    "id": 5,
+    "title": "Лодка надувная",
+    "imgUrl": "assets/imgs/boat.jpg",
+    "type": "транспорт водный",
+    "season": [
+      "лето"
+    ],
+    "price": 500,
+    "availability": true
+  },
+  {
+    "id": 6,
+    "title": "Ласты",
+    "imgUrl": "assets/imgs/flippers.jpg",
+    "type": "аксессуары",
+    "season": [
+      "лето"
+    ],
+    "price": 50,
+    "availability": false
+  },
+  {
+    "id": 7,
+    "title": "Мяч гимнастический",
+    "imgUrl": "assets/imgs/gymnastic-ball.jpg",
+    "type": "гимнастические снаряды",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 110,
+    "availability": true
+  },
+  {
+    "id": 8,
+    "title": "Гироскутер",
+    "imgUrl": "assets/imgs/hoverboard.jpg",
+    "type": "транспорт",
+    "season": [
+      "лето"
+    ],
+    "price": 800,
+    "availability": true
+  },
+  {
+    "id": 9,
+    "title": "Мяч для регби",
+    "imgUrl": "assets/imgs/ragby-ball.jpg",
+    "type": "мячи",
+    "season": [
+      "лето"
+    ],
+    "price": 80,
+    "availability": true
+  },
+  {
+    "id": 10,
+    "title": "Ролики",
+    "imgUrl": "assets/imgs/rollers.jpg",
+    "type": "транспорт",
+    "season": [
+      "лето"
+    ],
+    "price": 220,
+    "availability": true
+  },
+  {
+    "id": 11,
+    "title": "Мяч футбольный",
+    "imgUrl": "assets/imgs/foot-ball.jpg",
+    "type": "мячи",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 130,
+    "availability": true
+  },
+  {
+    "id": 12,
+    "title": "Беговая дорожка",
+    "imgUrl": "assets/imgs/running-track.jpg",
+    "type": "тренажёры",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 1500,
+    "availability": true
+  },
+  {
+    "id": 13,
+    "title": "Спальный мешок",
+    "imgUrl": "assets/imgs/sleep-bag.jpg",
+    "type": "туристическое снаряжение",
+    "season": [
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 360,
+    "availability": true
+  },
+  {
+    "id": 14,
+    "title": "Сноуборд",
+    "imgUrl": "assets/imgs/snowboard.jpg",
+    "type": "зимний спорт",
+    "season": [
+      "зима"
+    ],
+    "price": 650,
+    "availability": true
+  },
+  {
+    "id": 15,
+    "title": "Платформа для степа",
+    "imgUrl": "assets/imgs/step-platform.jpg",
+    "type": "гимнастические снаряды",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 320,
+    "availability": true
+  },
+  {
+    "id": 16,
+    "title": "Стол складной",
+    "imgUrl": "assets/imgs/table.jpg",
+    "type": "туристическое снаряжение",
+    "season": [
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 450,
+    "availability": true
+  },
+  {
+    "id": 17,
+    "title": "Палатка",
+    "imgUrl": "assets/imgs/tent.jpg",
+    "type": "туристическое снаряжение",
+    "season": [
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 740,
+    "availability": true
+  },
+  {
+    "id": 18,
+    "title": "Буксир подводный",
+    "imgUrl": "assets/imgs/underwater-tug.jpg",
+    "type": "подводное снаряжение",
+    "season": [
+      "лето"
+    ],
+    "price": 980,
+    "availability": true
+  },
+  {
+    "id": 19,
+    "title": "Жилет",
+    "imgUrl": "assets/imgs/vest.jpg",
+    "type": "водные аксессуары",
+    "season": [
+      "лето"
+    ],
+    "price": 380,
+    "availability": true
+  },
+  {
+    "id": 20,
+    "title": "Гиря 16",
+    "imgUrl": "assets/imgs/weight.jpg",
+    "type": "гимнастические снаряды",
+    "season": [
+      "зима",
+      "весна",
+      "лето",
+      "осень"
+    ],
+    "price": 310,
+    "availability": true
+  }
+]

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Детальная информация</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-5>
+        <ion-thumbnail item-start>
+          <img [src]="chosenItem.imgUrl" alt="фото"/>
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col col-7>
+        <ion-list>
+          <ion-item text-wrap>
+            <h4>Наименование</h4>
+            <p>{{chosenItem.title}}</p>
+          </ion-item>
+          <ion-item>
+            <h4>Тип</h4>
+            <p>{{chosenItem.type}}</p>
+          </ion-item>
+          <ion-item>
+            <h4>Сезон</h4>
+            <p *ngFor="let season of chosenItem.season">{{season}}</p>
+          </ion-item>
+          <ion-item>
+            <h4>Наличие</h4>
+            <p *ngIf="chosenItem.availability">Есть в наличии</p>
+            <p *ngIf="!chosenItem.availability">Нет в наличии</p>
+          </ion-item>
+          <ion-item>
+            <h4>Цена</h4>
+            <p>{{chosenItem.price}}, руб/день</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-item *ngIf="!chosenItem.availability" color="danger" text-center text-wrap>
+    <div>Нельзя забронировать, нет в наличии</div>
+  </ion-item>
+
+  <ion-item *ngIf="chosenItem.availability">
+    <h4 *ngIf="isBooked">Товар забронирован на</h4>
+    <h4 *ngIf="!isBooked">Товар ещё не забронирован</h4>
+
+    <ion-item *ngFor="let date of bookedDates">
+      {{dataNativeStorageProvider.showDate(date)}}
+    </ion-item>
+    <button ion-button full margin-top (click)="goItemBook(chosenItem)">Забронировать</button>
+  </ion-item>
+
+</ion-content>

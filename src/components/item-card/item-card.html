@@ -1,0 +1,28 @@
+<ion-card class="item-card">
+  <ion-card-header>
+    {{itemCardData.title}}
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-row>
+      <ion-col>
+        <ion-item class="item-card__image">
+          <img src="{{itemCardData.imgUrl}}" alt="item photo">
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <h4>Наличие:</h4>
+          <p *ngIf="itemCardData.availability">Есть на складе</p>
+          <p *ngIf="!itemCardData.availability">Нет на складе</p>
+        </ion-item>
+
+        <ion-item>
+          <h4>Цена:</h4>
+          <p>{{itemCardData.price}} руб/сутки</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,29 @@
+page-home {
+
+  $nice-purple: #9900cc;
+  %custom-font-style {
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .item-card:hover {
+    cursor: pointer;
+  }
+
+  .item-card__image {
+    width: 130px;
+  }
+
+  .help-info {
+    @extend %custom-font-style;
+    color: $nice-purple;
+    @include transform(rotate(-5deg));
+  }
+
+  @mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+
+}

@@ -1,0 +1,12 @@
+page-item-booking {
+  $success: #2dd36f;
+  $warning: #eb445a;
+
+  .booking-help-info.booking-help-info_warning {
+    color: $warning;
+  }
+
+  .booking-help-info {
+    color: $success;
+  }
+}

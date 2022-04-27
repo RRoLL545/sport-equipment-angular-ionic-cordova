@@ -1,0 +1,17 @@
+<ion-menu [content]="content" type="overlay">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Перейти на</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+    <ion-list>
+      <button ion-item *ngFor="let page of pages" (click)="navTo(page)" text-wrap>{{page.title}}</button>
+      <button ion-item menuClose detail-none>Закрыть</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

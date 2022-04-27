@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Контакты</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-divider>Организация</ion-item-divider>
+    <ion-item>
+      <div item-right>
+        ACME sport inc.
+      </div>
+    </ion-item>
+
+    <ion-item-divider>Телефон</ion-item-divider>
+    <ion-item>
+      <a href="tel:{{purePhoneNumber}}">
+        <ion-icon name="call"></ion-icon>
+      </a>
+      <div item-right>
+        {{phoneNumber}}
+      </div>
+    </ion-item>
+
+    <ion-item-divider>
+      Часы работы
+      <ion-buttons item-right>
+        <button ion-button icon-only text-center small color="secondary" class="schedule__button"
+                (click)="isVisible = !isVisible">
+          <ion-icon name="add" *ngIf="isVisible"></ion-icon>
+          <ion-icon name="close-outline" *ngIf="!isVisible"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-item-divider>
+    <ion-item>
+      <div *ngIf="!isVisible" margin-bottom class="schedule__full-schedule">
+        <div *ngFor="let day of schedule">{{day.day}}
+          : {{day.isDayOff === true ? 'Выходной' : day.openTime + ' - ' + day.closeTime }}</div>
+      </div>
+
+      <div>
+        <div *ngIf="today.isOpened">
+          <div class="schedule__status_opened">Открыто</div>
+          <div>Закроется в {{today.closeTime}}</div>
+        </div>
+
+        <div *ngIf="!today.isOpened">
+          <div class="schedule__status_closed">Закрыто</div>
+          <div>Откроется {{today.nextWorkingDayDate}} в {{today.openTimeIfClosed}}</div>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

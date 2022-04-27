@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{bookItem.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Выберите дату</ion-label>
+    <ion-datetime displayFormat="DD-MMM-YYYY"
+                  pickerFormat="DD MMMM YYYY"
+                  [(ngModel)]="bookDate"
+                  cancelText="Отмена"
+                  doneText="Выбрать"
+                  [min]="currentDate"
+                  max="2071">
+    </ion-datetime>
+  </ion-item>
+
+  <button ion-button full margin-top (click)="bookProcess()">Забронировать</button>
+
+  <div class="booking-help-info"
+       [class.booking-help-info_warning]="isWarningMessage()"
+       margin-top>
+    {{bookingMessage.messageText}}
+  </div>
+
+</ion-content>
