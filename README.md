@@ -12,3 +12,8 @@
   * режим работы,
   * работает ли сейчас,
   * карта с отмеченным местоположением (опционально).
+
+
+## Код проекта по [ссылке](https://github.com/RRoLL545/sport-equipment-angular-ionic-cordova/tree/develop)
+
+## [Deployment](https://rroll545.github.io/sport-equipment-angular-ionic-cordova/)
